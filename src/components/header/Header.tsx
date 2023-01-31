@@ -6,7 +6,7 @@ import NavbarUser from "./NavbarUser";
 
 const Header = () => {
   return (
-    <Navbar>
+    <Navbar fixedToTop>
       <NavbarGroup>
         <HeaderLogo />
         <NavbarDivider />

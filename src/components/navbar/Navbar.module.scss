@@ -1,0 +1,18 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.navbar {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  top: $pt-navbar-height;
+  border-right: 1px solid rgba(17, 20, 24, 0.15);
+  background: $pt-app-background-color;
+
+  &__item {
+    margin: $pt-grid-size;
+  }
+
+  &__menu {
+    background: $pt-app-background-color;
+  }
+}
