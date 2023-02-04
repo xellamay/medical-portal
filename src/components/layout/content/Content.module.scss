@@ -1,0 +1,12 @@
+@import "../../../../node_modules/@blueprintjs/core/lib/scss/variables";
+@import "../../../scss/variabels";
+
+.content {
+  position: absolute;
+  top: $pt-navbar-height;
+  left: $menu-width;
+  right: 0;
+  bottom: 0;
+  padding: $pt-grid-size * 2;
+  overflow: auto;
+}

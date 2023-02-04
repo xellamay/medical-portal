@@ -1,4 +1,5 @@
-@import "~@blueprintjs/core/lib/scss/variables";
+@import "../../../../node_modules/@blueprintjs/core/lib/scss/variables";
+@import "../../../scss/variabels";
 
 .navbar {
   display: inline-block;
@@ -7,12 +8,13 @@
   top: $pt-navbar-height;
   border-right: 1px solid rgba(17, 20, 24, 0.15);
   background: $pt-app-background-color;
+  width: $menu-width;
 
   &__item {
     margin: $pt-grid-size;
   }
 
   &__menu {
-    background: $pt-app-background-color;
+    background: inherit !important;
   }
 }
