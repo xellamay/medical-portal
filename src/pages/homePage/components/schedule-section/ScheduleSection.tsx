@@ -1,7 +1,8 @@
 import React from 'react';
+import { ScheduleList } from "../../../../widgets";
 
 const ScheduleSection: React.FC = () => (
-    <h1>ScheduleSection</h1>
+    <ScheduleList/>
 )
 
 export default ScheduleSection;

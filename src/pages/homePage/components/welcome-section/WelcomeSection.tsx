@@ -1,7 +1,8 @@
 import React from 'react';
+import WelcomeList from "../../../../widgets/WelcomeList/WelcomeList";
 
 const WelcomeSection: React.FC = () => (
-    <h1>WelcomeSection</h1>
+    <WelcomeList />
 )
 
 export default WelcomeSection;
