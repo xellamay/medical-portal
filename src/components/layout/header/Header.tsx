@@ -4,6 +4,7 @@ import HeaderLogo from "./HeaderLogo";
 import NavbarActions from "./NavbarActions";
 import NavbarUser from "./NavbarUser";
 
+// TODO: локали
 const Header = () => {
   return (
     <Navbar fixedToTop>

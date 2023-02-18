@@ -1,11 +1,6 @@
-export enum NewsTypes {
-  MEDICINE = "medicine",
-  EVENT = "event",
-}
-
 export type News = {
   id: string,
-  type: `${NewsTypes}`,
+  type: string,
   title: string,
   description: string,
   publishDate: string,

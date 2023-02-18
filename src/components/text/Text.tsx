@@ -3,6 +3,7 @@ import cn from 'classnames';
 import { Classes, Intent } from '@blueprintjs/core';
 import Styles from './Text.module.scss';
 
+// TODO: удалить не используемый код
 interface IProps {
   className?: string;
   text?: string;

@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Menu, MenuDivider, MenuItem, Popover, PopoverPosition } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 
+// TODO: нужно постараться мигрировать на Popover2
 const NavbarUser: React.FC = () => (
   <Popover
     target={

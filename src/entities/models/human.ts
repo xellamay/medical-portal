@@ -6,5 +6,6 @@ export type Human = {
   birthday: string,
   age: number,
   male: "man" | "woman",
-  image: string
+  image: string,
+  dateRecruitment: string
 }

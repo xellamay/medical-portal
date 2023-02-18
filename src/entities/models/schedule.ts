@@ -5,5 +5,5 @@ export type Schedule = {
   dayOfTheWeek: string,
   jobTitle: string,
   filial: string,
-  workTime: "job" | "day off"
+  workTime: string
 }

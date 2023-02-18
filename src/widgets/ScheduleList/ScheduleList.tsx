@@ -1,22 +1,21 @@
 import React from 'react';
-import classes from "./ScheduleList.module.scss";
 import { ScheduleCard } from "../../entities/ui";
+import Section from "../../entities/ui/section/Section";
+import { scheduleFixturesList } from "../../entities/fixtures";
 
 const ScheduleList: React.FC = () => (
-  <div className={classes.schedule}>
-    <ScheduleCard data="Сегодня"
-                  workTime="Рабочее время"
-                  time="15.00 - 21.00"
-                  jobTitle="Педиатр"
-                  filial="ДЦ-17, каб.105"
-    />
-    <ScheduleCard data="Завтра"
-                  workTime="Рабочее время"
-                  time="15.00 - 21.00"
-                  jobTitle="Педиатр"
-                  filial="ДЦ-17, каб.105"
-    />
-  </div>
+  <Section>
+    {scheduleFixturesList.map((item) =>
+      <ScheduleCard
+        key={item.id}
+        date={item.date}
+        workTime={item.workTime}
+        time={item.time}
+        jobTitle={item.jobTitle}
+        filial={item.filial}
+      />
+    )}
+  </Section>
 )
 
 export default ScheduleList;

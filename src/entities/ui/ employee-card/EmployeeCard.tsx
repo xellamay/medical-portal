@@ -18,21 +18,12 @@ const EmployeeCard: React.FC<Props> = ({ name, surname, lastname, birthday, fili
     <Card className={classes.employee}>
       <img className={classes.employee__img} src={image} alt={name}/>
       <div className={classes.employee__name}>
-        <Text tagName="div">
-          {lastname}
-        </Text>
-        <Text tagName="div">
-          {name}
-        </Text>
-        <Text tagName="div">
-          {surname}
-        </Text>
-        <Text tagName="div">
-          {filial}, {jobTitle}
-        </Text>
-        <Text tagName="div">
-          {data}
-        </Text>
+        {/* TODO: если все текста собираешься как div делать, то можешь в компоненте сделать div по умолчанию */}
+        <Text tagName="div">{lastname}</Text>
+        <Text tagName="div">{name}</Text>
+        <Text tagName="div">{surname}</Text>
+        <Text tagName="div">{`${filial}, ${jobTitle}`}</Text>
+        <Text tagName="div">{data}</Text>
       </div>
     </Card>
 )

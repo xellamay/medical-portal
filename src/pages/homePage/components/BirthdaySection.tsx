@@ -1,8 +1,8 @@
 import React from 'react';
-import BirthdayList from "../../../../widgets/BirthdayList/BirthdayList";
+import BirthdayList from "../../../widgets/BirthdayList/BirthdayList";
 
 const BirthdaySection: React.FC = () => (
-    <BirthdayList />
+  <BirthdayList />
 )
 
 export default BirthdaySection;

@@ -1,19 +1,20 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
 .card {
   display: inline-block;
-  margin-right: 20px;
-  border-radius: 10px !important;
+  border-radius: $pt-grid-size !important;
 
   &__heading {
-    margin-bottom: 20px;
+    margin-bottom: $pt-grid-size * 2;
   }
 
   &__title {
-    margin: 10px 0;
+    margin: $pt-grid-size 0;
   }
 
   &__content {
     border-left: 2px #bdb8b8 solid;
-    padding-left: 10px;
+    padding-left: $pt-grid-size;
     display: flex;
     flex-direction: column;
     row-gap: 5px;

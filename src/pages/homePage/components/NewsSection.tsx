@@ -1,8 +1,8 @@
 import React from 'react';
-import { NewsList } from "../../../../widgets";
+import { NewsList } from "../../../widgets";
 
 const NewsSection: React.FC = () => (
-    <NewsList />
+  <NewsList />
 )
 
 export default NewsSection;

@@ -1,18 +1,16 @@
 import React from "react";
-import BirthdaySection from "./components/birthday-section/BirthdaySection";
-import ScheduleSection from "./components/schedule-section/ScheduleSection";
-import NewsSection from "./components/news-section/NewsSection";
-import WelcomeSection from "./components/welcome-section/WelcomeSection";
+import BirthdaySection from "./components/BirthdaySection";
+import ScheduleSection from "./components/ScheduleSection";
+import NewsSection from "./components/NewsSection";
+import WelcomeSection from "./components/WelcomeSection";
 
-const HomePage = () => {
-  return (
-    <>
-      <ScheduleSection />
-      <NewsSection />
-      <WelcomeSection />
-      <BirthdaySection />
-    </>
-  )
-}
+const HomePage = () => (
+  <>
+    <ScheduleSection/>
+    <NewsSection/>
+    <WelcomeSection/>
+    <BirthdaySection/>
+  </>
+)
 
 export default HomePage

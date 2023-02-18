@@ -2,6 +2,7 @@ import React from "react";
 import { Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
 import classes from "./Navbar.module.scss"
 
+// TODO: можно вынести в локали текста, нужно начинать делать роутинг
 const Navbar = () => (
   <nav className={classes.navbar}>
     <Menu className={classes.navbar__menu}>
