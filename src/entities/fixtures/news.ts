@@ -37,3 +37,24 @@ export const newsFixturesList: News[] = [
   newsAboutInjury,
   newsAboutDentistry,
 ]
+
+export const newsFixturesPage: News[] = [
+  newsAboutInjury,
+  newsAboutDentistry,
+  newsAboutInjury,
+  newsAboutDentistry,
+  newsAboutInjury,
+  newsAboutDentistry,
+  newsAboutInjury,
+  newsAboutDentistry,
+  newsAboutInjury,
+  newsAboutDentistry,
+  newsAboutInjury,
+  newsAboutDentistry,
+  newsAboutInjury,
+  newsAboutDentistry,
+  newsAboutInjury,
+  newsAboutDentistry,
+  newsAboutInjury,
+  newsAboutDentistry,
+]

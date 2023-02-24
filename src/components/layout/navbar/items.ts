@@ -1,0 +1,62 @@
+import { v4 as uuid } from "uuid";
+import { ROUT_HOME_PAGE, ROUT_NEWS_PAGE } from "../../../app/routing/constans";
+
+
+export const navItems = [
+  {
+    id: uuid(),
+    type: "item",
+    icon: "home",
+    text: "Главная",
+    href: ROUT_HOME_PAGE
+  },
+  {
+    id: uuid(),
+    type: "item",
+    icon: "calendar",
+    text: "График работы"
+  },
+  {
+    id: uuid(),
+    type: "item",
+    icon: "application",
+    text: "Новости",
+    href: ROUT_NEWS_PAGE
+  },
+  {
+    id: uuid(),
+    type: "item",
+    icon: "people",
+    text: "Сотрудники"
+  },
+  {
+    id: uuid(),
+    type: "item",
+    icon: "new-person",
+    text: "Новому сотруднику"
+  },
+  {
+    id: uuid(),
+    type: "item",
+    icon: "shopping-cart",
+    text: "Предложения партнеров"
+  },
+  {
+    id: uuid(),
+    type: "divider",
+    icon: "",
+    text: ""
+  },
+  {
+    id: uuid(),
+    type: "item",
+    icon: "annotation",
+    text: "База знаний"
+  },
+  {
+    id: uuid(),
+    type: "item",
+    icon: "help",
+    text: "Служба поддержки"
+  }
+]

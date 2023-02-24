@@ -16,7 +16,7 @@ const NewsCard: React.FC<Props> = ({ image, type, title }) => (
     </div>
     <div className={classes.newsCard__desc}>
       <Text className={classes.newsCard__chapter} tagName="div" large>
-        <a href="#">
+        <a href="/">
           {type}
         </a>
       </Text>

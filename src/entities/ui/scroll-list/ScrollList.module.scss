@@ -1,0 +1,8 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.list {
+  padding: $pt-grid-size;
+  display: flex;
+  column-gap: $pt-grid-size;
+  overflow: auto;
+}

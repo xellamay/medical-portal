@@ -1,22 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
-import classes from "./Navbar.module.scss"
+import classes from "./Navbar.module.scss";
+import { useHistory } from "react-router-dom";
+import { IconName } from "@blueprintjs/icons";
+import { navItems } from "./items";
 
-// TODO: можно вынести в локали текста, нужно начинать делать роутинг
-const Navbar = () => (
-  <nav className={classes.navbar}>
-    <Menu className={classes.navbar__menu}>
-      <MenuItem className={classes.navbar__item} icon="home" text="Главная" />
-      <MenuItem className={classes.navbar__item} icon="calendar" text="График работы" />
-      <MenuItem className={classes.navbar__item} icon="application" text="Новости" />
-      <MenuItem className={classes.navbar__item} icon="people" text="Сотрудники" />
-      <MenuItem className={classes.navbar__item} icon="new-person" text="Новому сотруднику" />
-      <MenuItem className={classes.navbar__item} icon="shopping-cart" text="Предложения партнеров" />
-      <MenuDivider />
-      <MenuItem className={classes.navbar__item} icon="annotation" text="База знаний" />
-      <MenuItem className={classes.navbar__item} icon="help" text="Служба поддержки" />
-    </Menu>
-  </nav>
-)
+const Navbar = () => {
+  const history = useHistory();
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+  const handleClick = (href: string | undefined) => {
+    if (href) {
+      history.push(href);
+      setCurrentPath(href);
+    }
+  }
+
+  return (
+    <nav className={classes.navbar}>
+      <Menu className={classes.navbar__menu}>
+        {navItems.map((item) => {
+          if (item.type === "item") {
+            return (
+              <MenuItem
+                key={item.id}
+                className={classes.navbar__item}
+                icon={item.icon as IconName}
+                text={item.text}
+                onClick={() => handleClick(item.href)}
+                selected={currentPath === item.href}
+              />
+            )
+          }
+
+          return (
+            <MenuDivider key={item.id} />
+          )
+        })}
+      </Menu>
+    </nav>
+  );
+}
 
 export default Navbar;

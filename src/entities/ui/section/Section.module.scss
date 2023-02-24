@@ -9,11 +9,4 @@
     justify-content: space-between;
     margin-bottom: $pt-grid-size;
   }
-
-  &__content {
-    padding: $pt-grid-size;
-    display: flex;
-    column-gap: $pt-grid-size;
-    overflow: auto;
-  }
 }
