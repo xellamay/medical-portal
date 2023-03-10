@@ -1,5 +1,5 @@
 import { v4 as uuid } from "uuid";
-import { ROUT_HOME_PAGE, ROUT_NEWS_PAGE } from "../../../app/routing/constans";
+import { ROUT_HOME_PAGE, ROUT_NEWS_LIST_PAGE, ROUT_SCHEDULE_PAGE } from "../../../app/routing/constans";
 
 
 export const navItems = [
@@ -14,14 +14,15 @@ export const navItems = [
     id: uuid(),
     type: "item",
     icon: "calendar",
-    text: "График работы"
+    text: "График работы",
+    href: ROUT_SCHEDULE_PAGE
   },
   {
     id: uuid(),
     type: "item",
     icon: "application",
     text: "Новости",
-    href: ROUT_NEWS_PAGE
+    href: ROUT_NEWS_LIST_PAGE
   },
   {
     id: uuid(),

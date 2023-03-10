@@ -1,22 +1,25 @@
 import React from 'react';
-import { NewsCard } from "../../entities/ui";
-import { newsFixturesPage } from "../../entities/fixtures/news";
 import Page from "../../entities/ui/page/Page";
-import classes from "./NewsPage.module.scss"
+import { Text } from "../../components/text";
+import { useParams } from "react-router-dom";
+import { getMockById } from "../../entities/fixtures/news";
 
-const NewsPage: React.FC = () => (
-  <Page>
-    <div className={classes.news}>
-      {newsFixturesPage.map((item) => (
-        <NewsCard
-          key={item.id}
-          image={item.previewSrc}
-          type={item.type}
-          title={item.title}
-        />
-      ))}
-    </div>
-  </Page>
-)
+interface UrlParams {
+  id: string
+}
+
+const NewsPage: React.FC = () => {
+  const { id } = useParams<UrlParams>();
+  const mockById = getMockById(id as string);
+
+  return (
+    <Page title={mockById.title}
+          image={mockById.previewSrc}>
+      <Text>
+        {mockById.description}
+      </Text>
+    </Page>
+  )
+}
 
 export default NewsPage;

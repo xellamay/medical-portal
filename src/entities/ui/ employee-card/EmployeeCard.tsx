@@ -14,8 +14,11 @@ interface Props {
   data?: string,
 }
 
-const EmployeeCard: React.FC<Props> = ({ name, surname, lastname, birthday, filial, jobTitle, image, data }) => (
-    <Card className={classes.employee}>
+const EmployeeCard: React.FC<Props> = ({ name, surname, lastname, birthday, filial, jobTitle, image, data }) => {
+
+
+  return (
+    <Card className={classes.employee} interactive={true} onClick={handleClick}>
       <img className={classes.employee__img} src={image} alt={name}/>
       <div className={classes.employee__name}>
         {/* TODO: если все текста собираешься как div делать, то можешь в компоненте сделать div по умолчанию */}
@@ -26,6 +29,7 @@ const EmployeeCard: React.FC<Props> = ({ name, surname, lastname, birthday, fili
         <Text tagName="div">{data}</Text>
       </div>
     </Card>
-)
+  )
+}
 
 export default EmployeeCard;

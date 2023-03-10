@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
 import classes from "./Navbar.module.scss";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import { IconName } from "@blueprintjs/icons";
 import { navItems } from "./items";
 
 const Navbar = () => {
   const history = useHistory();
-  const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const location = useLocation();
+
+  const [currentPath, setCurrentPath] = useState(location.pathname);
 
   const handleClick = (href: string | undefined) => {
     if (href) {
       history.push(href);
-      setCurrentPath(href);
     }
   }
+
+  useEffect(() => {
+    setCurrentPath(location.pathname)
+  }, [location.pathname]);
 
   return (
     <nav className={classes.navbar}>
@@ -28,7 +33,7 @@ const Navbar = () => {
                 icon={item.icon as IconName}
                 text={item.text}
                 onClick={() => handleClick(item.href)}
-                selected={currentPath === item.href}
+                selected={currentPath.startsWith(item.href!)}
               />
             )
           }

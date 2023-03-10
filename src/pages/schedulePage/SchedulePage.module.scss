@@ -1,0 +1,6 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.schedule__content {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}

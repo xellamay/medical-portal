@@ -1,0 +1,7 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.schedule {
+  display: flex;
+  width: 100%;
+  column-gap: $pt-grid-size * 2;
+}
