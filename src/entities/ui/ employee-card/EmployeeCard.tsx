@@ -12,13 +12,12 @@ interface Props {
   jobTitle: string,
   filial: string,
   data?: string,
+  onClick?: () => void,
 }
 
-const EmployeeCard: React.FC<Props> = ({ name, surname, lastname, birthday, filial, jobTitle, image, data }) => {
-
-
+const EmployeeCard: React.FC<Props> = ({ onClick, name, surname, lastname, birthday, filial, jobTitle, image, data }) => {
   return (
-    <Card className={classes.employee} interactive={true} onClick={handleClick}>
+    <Card className={classes.employee} interactive={true} onClick={onClick}>
       <img className={classes.employee__img} src={image} alt={name}/>
       <div className={classes.employee__name}>
         {/* TODO: если все текста собираешься как div делать, то можешь в компоненте сделать div по умолчанию */}

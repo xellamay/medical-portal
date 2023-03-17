@@ -1,0 +1,42 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.dialog {
+  width: auto;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    padding: $pt-grid-size * 3;
+    column-gap: $pt-grid-size;
+  }
+
+  &__image {
+    max-width: 200px;
+  }
+
+  &__header {
+    margin-bottom: $pt-grid-size * 3;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: $pt-grid-size;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: $pt-grid-size * 5;
+    background-color: #f0f0f0;
+    padding: $pt-grid-size $pt-grid-size * 1.5;
+  }
+
+  &__text {
+    margin: 0;
+    display: flex;
+    column-gap: $pt-grid-size;
+    flex-wrap: nowrap;
+  }
+}
