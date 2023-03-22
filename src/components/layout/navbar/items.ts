@@ -1,5 +1,10 @@
 import { v4 as uuid } from "uuid";
-import { ROUT_HOME_PAGE, ROUT_NEWS_LIST_PAGE, ROUT_SCHEDULE_PAGE } from "../../../app/routing/constans";
+import {
+  ROUT_EMPLOYEES_LIST_PAGE,
+  ROUT_HOME_PAGE,
+  ROUT_NEWS_LIST_PAGE,
+  ROUT_SCHEDULE_PAGE
+} from "../../../app/routing/constans";
 
 
 export const navItems = [
@@ -28,7 +33,8 @@ export const navItems = [
     id: uuid(),
     type: "item",
     icon: "people",
-    text: "Сотрудники"
+    text: "Сотрудники",
+    href: ROUT_EMPLOYEES_LIST_PAGE
   },
   {
     id: uuid(),

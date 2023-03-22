@@ -10,13 +10,17 @@ interface UrlParams {
 
 const NewsPage: React.FC = () => {
   const { id } = useParams<UrlParams>();
-  const mockById = getMockById(id as string);
+  const news = getMockById(id as string);
+
+  if (!news) {
+   return <Text>Новость не найдена</Text>
+  }
 
   return (
-    <Page title={mockById.title}
-          image={mockById.previewSrc}>
+    <Page title={news.title}
+          image={news.previewSrc}>
       <Text>
-        {mockById.description}
+        {news.description}
       </Text>
     </Page>
   )

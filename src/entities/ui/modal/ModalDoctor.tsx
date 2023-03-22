@@ -22,7 +22,7 @@ const ModalDoctor: React.FC<Props> = ({ isOpen, onClose, image, jobTitle, filial
     <Dialog className={classes.dialog} isOpen={isOpen} onClose={onClose} canOutsideClickClose={true}>
       <DialogBody className={classes.dialog__body}>
         <div>
-          <img className={classes.dialog__image} src={image} alt="image"/>
+          <img className={classes.dialog__image} src={image} alt=""/>
         </div>
         <div>
           <div className={classes.dialog__header}>

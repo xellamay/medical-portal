@@ -1,11 +1,8 @@
 @import "~@blueprintjs/core/lib/scss/variables";
 
-.page {
+.list {
   display: flex;
   flex-direction: column;
-  row-gap: $pt-grid-size * 3;
-
-  &__img {
-    width: 100%;
-  }
+  row-gap: $pt-grid-size;
+  padding: $pt-grid-size * 2 0;
 }

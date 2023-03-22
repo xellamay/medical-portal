@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-import { EmployeeCard } from "../../entities/ui";
+import { EmployeeCardVertical } from "../../entities/ui";
 import Section from "../../entities/ui/section/Section";
 import { doctorFixturesList, getMockDoctorById } from "../../entities/fixtures";
 import ScrollList from "../../entities/ui/scroll-list/ScrollList";
-import { Dialog, DialogBody, Icon } from "@blueprintjs/core";
-import { Text } from "../../components/text";
-import classes from "./WelcomeList.module.scss";
 import { Doctor } from "../../entities/models";
 import ModalDoctor from "../../entities/ui/modal/ModalDoctor";
 
@@ -41,7 +38,7 @@ const WelcomeList: React.FC = () => {
       )}
       <ScrollList>
         {doctorFixturesList.map((item) => (
-          <EmployeeCard
+          <EmployeeCardVertical
             key={item.id}
             name={item.name}
             lastname={item.lastname}

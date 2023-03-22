@@ -1,9 +1,12 @@
 import NewsCard from "./news-card/NewsCard";
 import ScheduleCard from "./shedule-card/ScheduleCard";
-import EmployeeCard from "./ employee-card/EmployeeCard";
+import EmployeeCardVertical from "./employee-card-vertical/EmployeeCardVertical";
+import EmployeeCardHorizontal from "./employee-card-horizontal/EmployeeCardHorizontal";
 
 export {
   NewsCard,
   ScheduleCard,
-  EmployeeCard
+  EmployeeCardVertical,
+  EmployeeCardHorizontal,
+
 };

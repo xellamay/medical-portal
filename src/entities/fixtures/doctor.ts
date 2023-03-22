@@ -133,8 +133,6 @@ export const doctorFixturesList: Doctor[] = [
 
 export const getMockDoctorById = (id: Doctor["id"]): Doctor => {
   const currentDoctor = doctorFixturesList.filter((doctor) => doctor.id === id);
-  debugger
   //todo: если не находит доктора, то валится с ошибкой
-  console.log(currentDoctor)
   return currentDoctor[0];
 }

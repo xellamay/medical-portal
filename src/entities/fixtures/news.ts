@@ -134,12 +134,6 @@ export const newsAboutSix: News = {
   updated: "10.01.2023",
 }
 
-//TODO: не использовать два множества, спользовать слайс
-export const newsFixturesList: News[] = [
-  newsAboutInjury,
-  newsAboutDentistry,
-]
-
 export const newsFixturesPage: News[] = [
   newsAboutInjury,
   newsAboutDentistry,

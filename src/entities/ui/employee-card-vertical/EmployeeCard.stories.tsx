@@ -1,13 +1,13 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import EmployeeCard from './EmployeeCard';
+import EmployeeCardVertical from './EmployeeCardVertical';
 
 export default {
-  title: 'EmployeeCard',
-  component: EmployeeCard,
-} as ComponentMeta<typeof EmployeeCard>;
+  title: 'EmployeeCardVertical',
+  component: EmployeeCardVertical,
+} as ComponentMeta<typeof EmployeeCardVertical>;
 
-const Template: ComponentStory<typeof EmployeeCard> = (args) => <EmployeeCard {...args} />;
+const Template: ComponentStory<typeof EmployeeCardVertical> = (args) => <EmployeeCardVertical {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
