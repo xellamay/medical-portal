@@ -1,5 +1,6 @@
 import { v4 as uuid } from "uuid";
 import {
+  ROUT_AUTHORIZATION_PAGE,
   ROUT_EMPLOYEES_LIST_PAGE,
   ROUT_HOME_PAGE,
   ROUT_NEWS_LIST_PAGE,
@@ -40,7 +41,8 @@ export const navItems = [
     id: uuid(),
     type: "item",
     icon: "new-person",
-    text: "Новому сотруднику"
+    text: "Авторизация на странице",
+    href: ROUT_AUTHORIZATION_PAGE
   },
   {
     id: uuid(),
