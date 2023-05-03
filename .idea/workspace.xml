@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdeb66e-fa29-4f3c-8235-4983e2c16b51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/header/headerLogo/HeaderLogo.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/headerLogo/HeaderLogo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/navActions/NavActions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/navUser/NavUser.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routing/Routing.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routing/constans.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/Loader.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/Loader.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -73,11 +70,11 @@
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages\homePage\components\news-section" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xella\Documents\projects\medical-portal\src" />
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages" />
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app\routing" />
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages\homePage\components" />
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app\scss" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -129,7 +126,7 @@
       <workItem from="1681204224889" duration="1870000" />
       <workItem from="1681910077519" duration="1475000" />
       <workItem from="1681915832455" duration="22758000" />
-      <workItem from="1682669501292" duration="8965000" />
+      <workItem from="1682669501292" duration="12619000" />
     </task>
     <servers />
   </component>
