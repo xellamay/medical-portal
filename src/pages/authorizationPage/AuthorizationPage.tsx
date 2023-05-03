@@ -7,25 +7,26 @@ import classes from './AuthorizationPage.module.scss'
 import authApi from '../../api/auth'
 import { isAxiosError } from "axios";
 import { useNavigate  } from "react-router-dom";
+import { ROUT_HOME_PAGE } from "../../routing/constans";
 
-interface ISingInForm {
+type SingInForm = {
   login: string,
   password: string,
 }
 
 const AuthorizationPage: React.FC = () => {
   const navigate = useNavigate();
-  const { handleSubmit, control, setError, formState } = useForm<ISingInForm>();
+  const { handleSubmit, control, setError, formState } = useForm<SingInForm>();
   const { isSubmitting } = formState;
   const { errors } = useFormState({
     control
   })
 
-  const onSubmit: SubmitHandler<ISingInForm> = async (data) => {
+  const onSubmit: SubmitHandler<SingInForm> = async (data) => {
     try {
       const res = await authApi.auth(data);
       if (res) {
-        navigate('/home', { replace: true })
+        navigate(ROUT_HOME_PAGE, { replace: true })
      }
     } catch (e) {
       if (isAxiosError(e)) {
@@ -105,13 +106,15 @@ const AuthorizationPage: React.FC = () => {
             </FormGroup>
           )}
         />
-        <FormGroup>
+
           {errors.root && (
-            <Callout intent={Intent.WARNING}>
-              {errors.root?.type}
-            </Callout>
+            <FormGroup>
+              <Callout intent={Intent.WARNING}>
+                {errors.root?.type}
+              </Callout>
+            </FormGroup>
           )}
-        </FormGroup>
+
         <Button
           type="submit"
           loading={isSubmitting}
