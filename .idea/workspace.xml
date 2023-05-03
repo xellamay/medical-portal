@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdeb66e-fa29-4f3c-8235-4983e2c16b51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/loader/Loader.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/loader/Loader.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/logo/Logo.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/logo/Logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/authorizationPage/AuthorizationPage.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/homePage/HomePage.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/homePage/HomePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routing/Routing.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routing/constans.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authorizationPage/AuthorizationPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authorizationPage/AuthorizationPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/Loader.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/Loader.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
