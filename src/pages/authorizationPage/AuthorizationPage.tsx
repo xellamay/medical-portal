@@ -7,7 +7,7 @@ import classes from './AuthorizationPage.module.scss'
 import authApi from '../../api/auth'
 import { isAxiosError } from "axios";
 import { useNavigate  } from "react-router-dom";
-import { ROUT_HOME_PAGE } from "../../routing/constans";
+import { ROUT_HOME_PAGE } from "../../routing/routes";
 
 type SingInForm = {
   login: string,
