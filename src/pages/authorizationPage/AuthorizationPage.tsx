@@ -7,6 +7,7 @@ import classes from './AuthorizationPage.module.scss'
 import authApi from '../../api/auth'
 import { isAxiosError } from "axios";
 import { useNavigate  } from "react-router-dom";
+import { ROUT_HOME_PAGE } from "../../routing/routes";
 
 interface ISingInForm {
   login: string,
@@ -25,7 +26,7 @@ const AuthorizationPage: React.FC = () => {
     try {
       const res = await authApi.auth(data);
       if (res) {
-        navigate('/home', { replace: true })
+        navigate(ROUT_HOME_PAGE, { replace: true })
      }
     } catch (e) {
       if (isAxiosError(e)) {
