@@ -3,12 +3,13 @@ import classes from "./MenuBar.module.scss"
 import { Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
 
 const MenuBar: React.FC = () => (
-  <Menu className={classes.menu}>
-    <MenuItem icon="new-text-box"  text="New text box" />
-    <MenuItem icon="new-object" text="New object" />
-    <MenuItem icon="new-link" text="New link" />
+  <Menu className={classes.menu} large>
+    <MenuItem className={classes.menu__item} icon="home"  text="Главная" />
+    <MenuItem className={classes.menu__item}  icon="application" text="Новости" />
+    <MenuItem className={classes.menu__item}  icon="people" text="Сотрудники" />
+    <MenuItem className={classes.menu__item}  icon="shopping-cart" text="Предложения партнеров" />
     <MenuDivider />
-    <MenuItem text="Settings..." icon="cog" intent="primary">
+    <MenuItem className={classes.menu__item}  text="Настройки..." icon="cog" intent="primary">
       <MenuItem icon="tick" text="Save on edit" />
       <MenuItem icon="blank" text="Compile on edit" />
     </MenuItem>

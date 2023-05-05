@@ -1,3 +1,16 @@
+@import "../../app/custom-variabels";
+@import "../../../node_modules/@blueprintjs/core/lib/scss/variables";
+
 .menu {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  top: $pt-navbar-height;
+  width: $menu-width;
   border-right: 1px solid rgba(17, 20, 24, 0.15);
+  background: $pt-app-background-color;
+
+  &__item {
+    margin: $pt-grid-size;
+  }
 }
