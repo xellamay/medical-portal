@@ -106,15 +106,13 @@ const AuthorizationPage: React.FC = () => {
             </FormGroup>
           )}
         />
-
-          {errors.root && (
-            <FormGroup>
-              <Callout intent={Intent.WARNING}>
-                {errors.root?.type}
-              </Callout>
-            </FormGroup>
-          )}
-
+        {errors.root && (
+          <FormGroup>
+            <Callout intent={Intent.WARNING}>
+              {errors.root?.type}
+            </Callout>
+          </FormGroup>
+        )}
         <Button
           type="submit"
           loading={isSubmitting}
