@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../pages/homePage/HomePage";
 import AuthorizationPage from "../pages/authorizationPage/AuthorizationPage";
 
+//TODO: сделать редирект на главную страницу
+
 const Routing: React.FC = () => (
   <BrowserRouter>
     <Routes>
