@@ -1,44 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecdeb66e-fa29-4f3c-8235-4983e2c16b51" name="Changes" comment="">
+    <list default="true" id="c1f1de60-3608-412d-9a4c-6566bc209944" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/custom-variabels.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/custom-variabels.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/MenuBar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/MenuBar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/MenuBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/MenuBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="SCSS File" />
-        <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="ProjectId" id="2KxOnyaqs8gZ8ockboJcciCUPjX" />
+  <component name="ProjectId" id="2PQBw7pFHogn75PtNqth00kBqxB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -46,38 +23,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/xella/Documents/projects/medical-portal/src/entities/ui&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\xella\\Documents\\projects\\medical-portal\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\xella\\Documents\\projects\\medical-portal\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\entities\ui" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\components" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages\homePage\components\welcome-section" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages\homePage\components\schedule-section" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages\homePage\components\news-section" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app\routing" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages\homePage\components" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app\scss" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.start">
+}]]></component>
+  <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -88,60 +46,25 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="storybook" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ecdeb66e-fa29-4f3c-8235-4983e2c16b51" name="Changes" comment="" />
-      <created>1674912937818</created>
+      <changelist id="c1f1de60-3608-412d-9a4c-6566bc209944" name="Changes" comment="" />
+      <created>1683379664827</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1674912937818</updated>
-      <workItem from="1674912940347" duration="53580000" />
-      <workItem from="1676191132222" duration="1019000" />
-      <workItem from="1676360593601" duration="10549000" />
-      <workItem from="1676463400245" duration="21361000" />
-      <workItem from="1676913019319" duration="4674000" />
-      <workItem from="1677064477637" duration="66356000" />
-      <workItem from="1679131891456" duration="8444000" />
-      <workItem from="1679471215271" duration="11073000" />
-      <workItem from="1680260353263" duration="18553000" />
-      <workItem from="1681204087630" duration="9000" />
-      <workItem from="1681204224889" duration="1870000" />
-      <workItem from="1681910077519" duration="1475000" />
-      <workItem from="1681915832455" duration="22758000" />
-      <workItem from="1682669501292" duration="3013000" />
+      <updated>1683379664827</updated>
+      <workItem from="1683379668337" duration="799000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
