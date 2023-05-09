@@ -1,19 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from "./Navbar.module.scss"
-import { Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
+import { IconName, Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
+import { useLocation, useNavigate } from "react-router-dom";
+import { navItems } from "./ items";
 
-const Navbar: React.FC = () => (
-  <Menu className={classes.menu} large>
-    <MenuItem className={classes.menu__item} icon="home"  text="Главная" />
-    <MenuItem className={classes.menu__item}  icon="application" text="Новости" />
-    <MenuItem className={classes.menu__item}  icon="people" text="Сотрудники" />
-    <MenuItem className={classes.menu__item}  icon="shopping-cart" text="Предложения партнеров" />
-    <MenuDivider />
-    <MenuItem className={classes.menu__item}  text="Настройки..." icon="cog" intent="primary">
-      <MenuItem icon="tick" text="Save on edit" />
-      <MenuItem icon="blank" text="Compile on edit" />
-    </MenuItem>
-  </Menu>
-)
+const Navbar: React.FC = () => {
+  const location = useLocation();
+  const history = useNavigate();
+
+  const [currentPath, setCurrentPath] = useState(location.pathname);
+
+  useEffect(() => {
+    setCurrentPath(location.pathname)
+  }, [location.pathname]);
+
+  const handleClick = (href: string | undefined) => {
+    if (href) {
+      history(href)
+    }
+  }
+
+  return (
+    <Menu className={classes.menu} large>
+      {navItems.map((item) => {
+        if (item.type === "item") {
+          return (
+            <MenuItem
+              key={item.id}
+              className={classes.menu__item}
+              icon={item.icon as IconName}
+              text={item.text}
+              onClick={() => handleClick(item.href)}
+              selected={currentPath.startsWith(item.href!)}
+            />
+          )
+        }
+        return (
+          <MenuDivider key={item.id} />
+        )
+      })}
+    </Menu>
+  )
+}
 
 export default Navbar;
