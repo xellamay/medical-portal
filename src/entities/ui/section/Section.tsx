@@ -11,12 +11,16 @@ interface Props {
 const Section: React.FC<Props> = ({ children, title, subtitle }) => (
     <div className={classes.section}>
       <div className={classes.section__heading}>
-        <Text tagName="h2" heading>
-          {title}
-        </Text>
-        <Text large>
-          {subtitle}
-        </Text>
+        {title &&
+            <Text tagName="h2" heading>
+              {title}
+            </Text>
+        }
+        {subtitle &&
+            <Text large>
+              {subtitle}
+            </Text>
+        }
       </div>
       <div>
         {children}

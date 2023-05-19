@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1f1de60-3608-412d-9a4c-6566bc209944" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/slider/Slider.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/slider/Slider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/text/Text.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/text/Text.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/text/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/fixtures/slide.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/models/slide.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/ui/section/Section.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/ui/section/Section.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/fixtures/news.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/models/news.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/ui/news-card/NewsCard.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/ui/news-card/NewsCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/newsList/NewsList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/newsList/NewsList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ui/section/Section.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/section/Section.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ui/section/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/section/Section.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/homePage/HomePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homePage/HomePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="SCSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -136,7 +132,7 @@
       <workItem from="1681915832455" duration="22758000" />
       <workItem from="1682669501292" duration="3013000" />
       <workItem from="1683185667567" duration="871000" />
-      <workItem from="1683619602193" duration="27542000" />
+      <workItem from="1683619602193" duration="35373000" />
     </task>
     <servers />
   </component>
