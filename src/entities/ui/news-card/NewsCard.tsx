@@ -13,7 +13,7 @@ interface Props {
 const NewsCard: React.FC<Props> = ({ image, title, type, id }) => (
   <Card className={classes.card} interactive={true} elevation={Elevation.ONE}>
    <div>
-     <img className={classes.card__image} src={image} alt="фоновая картинка"/>
+     <img className={classes.card__image} src={image} alt={title} />
    </div>
     <div className={classes.card__desc}>
       <Text className={classes.card__chapter} tagName="div" large>

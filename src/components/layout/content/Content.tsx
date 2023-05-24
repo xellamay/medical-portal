@@ -5,11 +5,10 @@ interface Props {
   children: React.ReactNode
 }
 
-const Content: React.FC<Props> = ({ children }) =>
-  (
-    <div className={classes.content}>
-      {children}
-    </div>
-  )
+const Content: React.FC<Props> = ({ children }) => (
+  <div className={classes.content}>
+    {children}
+  </div>
+)
 
 export default Content;

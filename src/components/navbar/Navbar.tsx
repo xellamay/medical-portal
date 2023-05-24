@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import classes from "./Navbar.module.scss"
 import { IconName, Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
 import { useLocation, useNavigate } from "react-router-dom";
-import { navItems } from "./ items";
+import { navItems } from "./items";
 
 const Navbar: React.FC = () => {
   const location = useLocation();

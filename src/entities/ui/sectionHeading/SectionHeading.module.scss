@@ -1,0 +1,8 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $pt-grid-size * 2;
+}

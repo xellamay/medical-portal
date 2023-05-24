@@ -1,0 +1,7 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $pt-grid-size * 2;
+}
