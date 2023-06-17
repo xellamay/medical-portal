@@ -2,26 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1f1de60-3608-412d-9a4c-6566bc209944" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/ui/page/Page.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/ui/page/Page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/ui/sectionHeading/SectionHeading.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/ui/sectionHeading/SectionHeading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/ui/sectionTitle/SectionTitle.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/newsListPage/NewsListPage.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/newsListPage/NewsListPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/newsPage/NewsPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/news.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/ui/employeeCard/EmployeeCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/widgets/newsList/newsLoader/NewsLoader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/custom-variabels.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/custom-variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/content/Content.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/content/Content.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/content/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/ items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/items.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ui/news-card/NewsCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/news-card/NewsCard.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ui/news-card/NewsCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/news-card/NewsCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ui/section/Section.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/section/Section.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/ui/section/Section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/section/Section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routing/Routing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routing/Routing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/Text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/Text.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ui/news-card/NewsCard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/newsСard/NewsCard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/ui/news-card/NewsCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/ui/newsСard/NewsCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/newsListPage/NewsListPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newsListPage/NewsListPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/newsList/NewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/newsList/NewsList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,11 +76,11 @@
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages\homePage\components\news-section" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\widgets\newsList" />
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app" />
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages" />
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app\routing" />
       <recent name="C:\Users\xella\Documents\projects\medical-portal\src\pages\homePage\components" />
-      <recent name="C:\Users\xella\Documents\projects\medical-portal\src\app\scss" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
@@ -144,7 +135,8 @@
       <workItem from="1682669501292" duration="3013000" />
       <workItem from="1683185667567" duration="871000" />
       <workItem from="1683619602193" duration="44341000" />
-      <workItem from="1684833671469" duration="1830000" />
+      <workItem from="1684833671469" duration="16063000" />
+      <workItem from="1685520328967" duration="8658000" />
     </task>
     <servers />
   </component>

@@ -23,23 +23,23 @@ interface IProps {
 }
 
 const Text: React.FC<IProps> = ({
-                                  className,
-                                  text = '',
-                                  max,
-                                  children,
-                                  heading,
-                                  bold = false,
-                                  uppercase = false,
-                                  large = false,
-                                  small = false,
-                                  disabled = false,
-                                  muted = false,
-                                  overflowed = false,
-                                  running = false,
-                                  monospace = false,
-                                  intent,
-                                  tagName = 'span'
-                                }) => {
+  className,
+  text = '',
+  max,
+  children,
+  heading,
+  bold = false,
+  uppercase = false,
+  large = false,
+  small = false,
+  disabled = false,
+  muted = false,
+  overflowed = false,
+  running = false,
+  monospace = false,
+  intent,
+  tagName = 'span'
+}) => {
   const classList = cn(className, {
     [Classes.UI_TEXT]: true,
     [Styles.bold]: bold,
@@ -59,21 +59,21 @@ const Text: React.FC<IProps> = ({
     [Classes.INTENT_DANGER]: intent === Intent.DANGER
   });
 
-  const maxTextLength = typeof max === 'number' ? max : text.length;
+const maxTextLength = typeof max === 'number' ? max : text.length;
 
-  const isLongText = text.length > maxTextLength;
+const isLongText = text.length > maxTextLength;
 
-  const getText = () => {
-    if (isLongText) {
-      const str = text.substr(0, max);
-      // возвращает строку до последнего пробела, что бы не разрывать слова
-      return `${str.substr(0, str.lastIndexOf(' '))}...`;
-    }
+const getText = () => {
+  if (isLongText) {
+    const str = text.substr(0, max);
+    // возвращает строку до последнего пробела, что бы не разрывать слова
+    return `${str.substr(0, str.lastIndexOf(' '))}...`;
+  }
 
-    return text;
-  };
+  return text;
+};
 
-  const htmlTitle = isLongText ? text : '';
+const htmlTitle = isLongText ? text : '';
 
   return (
 
