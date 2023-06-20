@@ -10,7 +10,7 @@ const Routing: React.FC = () => (
     <Route path={ROUT_HOME_PAGE} element={<HomePage />} />
     <Route
       path="/"
-      element={<Navigate to="/home" replace />}
+      element={<Navigate to={ROUT_HOME_PAGE} replace />}
     />
   </Routes>
 )

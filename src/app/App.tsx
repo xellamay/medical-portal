@@ -1,21 +1,19 @@
 import React from 'react';
 import './App.scss';
 import Routing from "../routing/Routing";
-import Root from "../components/layout/root/Root";
 import Header from "../components/header/Header";
-import Content from "../components/layout/content/Content";
+import Content from "../components/content/Content";
 import Navbar from "../components/navbar/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  return (
-    <Root>
-      <Header />
-      <Navbar />
-      <Content>
-        <Routing />
-      </Content>
-    </Root>
-  );
-}
+const App: React.FC = () => (
+  <BrowserRouter>
+    <Header />
+    <Navbar />
+    <Content>
+      <Routing />
+    </Content>
+  </BrowserRouter>
+)
 
 export default App;

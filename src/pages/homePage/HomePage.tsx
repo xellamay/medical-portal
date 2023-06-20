@@ -1,9 +1,9 @@
 import React from 'react';
 
 const HomePage: React.FC = () => (
-    <>
-      Hello!!
-    </>
+  <>
+    Hello!!
+  </>
 )
 
 export default HomePage;
