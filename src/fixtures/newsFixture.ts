@@ -1,4 +1,4 @@
-import { News } from "./news";
+import { News } from "../models/news";
 
 export const newsAboutInjury: News = {
   id: "91446c35-21b5-48c0-9f54-71b48942d674",
