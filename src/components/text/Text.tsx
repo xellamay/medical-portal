@@ -23,23 +23,23 @@ interface IProps {
 }
 
 const Text: React.FC<IProps> = ({
-                                  className,
-                                  text = '',
-                                  max,
-                                  children,
-                                  heading,
-                                  bold = false,
-                                  uppercase = false,
-                                  large = false,
-                                  small = false,
-                                  disabled = false,
-                                  muted = false,
-                                  overflowed = false,
-                                  running = false,
-                                  monospace = false,
-                                  intent,
-                                  tagName = 'span'
-                                }) => {
+    className,
+    text = '',
+    max,
+    children,
+    heading,
+    bold = false,
+    uppercase = false,
+    large = false,
+    small = false,
+    disabled = false,
+    muted = false,
+    overflowed = false,
+    running = false,
+    monospace = false,
+    intent,
+    tagName = 'span'
+  }) => {
   const classList = cn(className, {
     [Classes.UI_TEXT]: true,
     [Styles.bold]: bold,
@@ -76,7 +76,6 @@ const Text: React.FC<IProps> = ({
   const htmlTitle = isLongText ? text : '';
 
   return (
-
     React.createElement(
       tagName,
       {

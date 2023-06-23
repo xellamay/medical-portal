@@ -2,7 +2,7 @@ import React from 'react';
 import NewsCard from "../../components/newsCard/NewsCard";
 
 const HomePage: React.FC = () => (
-  //это для верстки для визуализации, потом здесь не будет этого
+  //TODO это для верстки для визуализации, потом здесь не будет этого
   <NewsCard
     id="1"
     title="Рана на ноге - от небольшой царапины до язвы"

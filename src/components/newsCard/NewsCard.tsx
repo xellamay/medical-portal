@@ -4,13 +4,12 @@ import Text from "../text/Text";
 import classes from "./NewsCard.module.scss"
 
 interface Props {
-  id: string,
   title: string,
   type: string,
   image: string,
 }
 
-const NewsCard: React.FC<Props> = ({ image, title, type, id }) => (
+const NewsCard: React.FC<Props> = ({ image, title, type}) => (
   <Card className={classes.card} interactive={true} elevation={Elevation.ONE}>
     <div>
       <img className={classes.card__image} src={image} alt={title} />
