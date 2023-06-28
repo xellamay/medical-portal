@@ -10,3 +10,9 @@
   padding: $pt-grid-size * 2;
   overflow: auto;
 }
+
+@media (max-width: 900px) {
+  .content {
+    left: $menu-width-mobile;
+  }
+}
