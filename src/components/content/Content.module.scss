@@ -11,7 +11,7 @@
   overflow: auto;
 }
 
-@media (max-width: 900px) {
+@media (max-width: $tablet-screen) {
   .content {
     left: $menu-width-mobile;
   }
