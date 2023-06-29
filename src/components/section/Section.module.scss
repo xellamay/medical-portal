@@ -4,3 +4,7 @@
   padding: $pt-grid-size;
   margin-bottom: $pt-grid-size * 4;
 }
+
+.section:last-child {
+  margin-bottom: 0;
+}
