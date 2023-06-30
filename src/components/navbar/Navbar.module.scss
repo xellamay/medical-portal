@@ -14,3 +14,17 @@
     margin: $pt-grid-size;
   }
 }
+
+@media (max-width: $tablet-screen) {
+  .menu {
+    width: $menu-width-mobile;
+    min-width: $menu-width-mobile;
+
+    &__item {
+
+      & div {
+        display: none;
+      }
+    }
+  }
+}
