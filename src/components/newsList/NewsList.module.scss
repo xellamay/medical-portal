@@ -1,0 +1,11 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.list {
+  display: flex;
+  width: 100%;
+  column-gap: $pt-grid-size * 2;
+
+  &__item {
+    width: 50%;
+  }
+}

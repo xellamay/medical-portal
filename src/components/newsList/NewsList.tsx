@@ -1,33 +1,37 @@
 import React from 'react';
-import ScrollList from "../scrollList/ScrollList";
 import NewsCard from "../newsCard/NewsCard";
 import useFetch from "../../hooks/useFetch";
+import classes from "./NewsList.module.scss"
 
 const NewsList: React.FC = () => {
   const { isLoading, isLoaded, isError, data } = useFetch()
 
   return(
-    <ScrollList>
+    <div className={classes.list}>
       {isLoading && (
         <p>Загружаю...</p>
       )}
       {isLoaded && (
         <>
           {data.slice(0, 2).map((item) => (
-            <NewsCard
-              id={item.id}
+            <div
               key={item.id}
-              image={item.previewSrc}
-              type={item.type}
-              title={item.title}
-            />
+              className={classes.list__item}
+            >
+              <NewsCard
+                id={item.id}
+                image={item.previewSrc}
+                type={item.type}
+                title={item.title}
+              />
+            </div>
           ))}
         </>
       )}
       {isError && (
         <p>Не удалось загрузить новости</p>
       )}
-    </ScrollList>
+    </div>
   )
 }
 
