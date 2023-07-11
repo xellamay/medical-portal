@@ -4,7 +4,7 @@ import { IconNames } from "@blueprintjs/icons";
 import { useForm, Controller, SubmitHandler, useFormState } from "react-hook-form";
 import Logo from "../../components/logo/Logo";
 import classes from './AuthorizationPage.module.scss'
-import authApi from '../../api/auth'
+import { authApi } from '../../api/indexApi'
 import { isAxiosError } from "axios";
 import { useNavigate  } from "react-router-dom";
 import { ROUT_HOME_PAGE } from "../../routing/routes";

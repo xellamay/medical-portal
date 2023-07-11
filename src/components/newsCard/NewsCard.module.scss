@@ -2,6 +2,8 @@
 
 .card {
   padding: 0 !important;
+  display: inline-block;
+  width: 100%;
 
   &__image {
     width: 100%;
