@@ -11,11 +11,10 @@ interface Props {
     image: string,
     jobTitle: string,
     filial: string,
-    data?: string,
     onClick?: () => void,
 }
 
-const EmployeeCard: React.FC<Props> = ({ onClick, name, surname, lastname, birthday, filial, jobTitle, image, data }) => {
+const EmployeeCard: React.FC<Props> = ({ onClick, name, surname, lastname, birthday, filial, jobTitle, image }) => {
     return (
         <Card className={classes.employee} interactive={true} onClick={onClick}>
             <img className={classes.employee__img} src={image} alt={name}/>
@@ -24,7 +23,6 @@ const EmployeeCard: React.FC<Props> = ({ onClick, name, surname, lastname, birth
                 <Text tagName="div">{name}</Text>
                 <Text tagName="div">{surname}</Text>
                 <Text tagName="div">{`${filial}, ${jobTitle}`}</Text>
-                <Text tagName="div">{data}</Text>
             </div>
         </Card>
     )
