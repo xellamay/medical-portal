@@ -16,7 +16,6 @@ const useFetch = () => {
     try {
       setState(LoadingState.Loading);
       const res = await newsApi.getNews();
-      console.log(res);
       setData(res.data);
       setState(LoadingState.Loaded);
     } catch (e) {

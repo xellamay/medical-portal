@@ -19,7 +19,6 @@ const NewsList: React.FC = () => {
               className={classes.list__item}
             >
               <NewsCard
-                id={item.id}
                 image={item.previewSrc}
                 type={item.type}
                 title={item.title}
