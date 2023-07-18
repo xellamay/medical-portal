@@ -1,0 +1,14 @@
+.employee {
+  width: fit-content;
+
+  &__img {
+    max-width: 100%;
+    height: 228px;
+  }
+
+  &__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
