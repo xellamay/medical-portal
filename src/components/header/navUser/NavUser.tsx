@@ -1,6 +1,6 @@
 import React from 'react';
 import { Classes, Popover2 } from "@blueprintjs/popover2";
-import { Button, IconName, Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
+import { Button, Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
 import { IconNames } from "@blueprintjs/icons";
 import { ROUT_AUTHORIZATION_PAGE } from "../../../routing/routes";
 

@@ -1,5 +1,7 @@
 import axios from 'axios';
 import MockAdapter from "axios-mock-adapter";
+import { newsFixturesPage } from "../fixtures/news";
+import { News } from "../models/news";
 
 const mock = new MockAdapter(axios, {
   delayResponse: 2000
@@ -13,10 +15,18 @@ type AuthParams = {
   password: string
 }
 
-const authApi = {
+export const authApi = {
   async auth(data: AuthParams) {
     return await axios.post("/auth", data)
   }
 }
 
-export default authApi;
+mock.onGet("/news").reply(200, [...newsFixturesPage]);
+mock.onGet("/news/:{id}").reply(403, { message: "Новость не найдена"});
+
+export const newsApi = {
+  async getNews() {
+    return axios.get<News[]>("/news")
+  }
+}
+
